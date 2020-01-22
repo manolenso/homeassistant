@@ -1,6 +1,6 @@
 # HKI update 1.1
 
-# Changes:
+## Changes:
 - fixed issue on the frontpage where clicking on the lights would not take you to the lights view
 
 ## How to update?
