@@ -11,4 +11,4 @@ if you haven't changed any code in the following files you can simply copy/paste
 
 ### Method 2:
 if you did make changes? please do the following changes in the following files:
-- in `lovelace/views/00.frontpage.yaml` change the path `/lovelace/light` to `lovelace/lights` on `line 74`.
+- in `lovelace/views/00.frontpage.yaml` change the path `/lovelace/light` to `lovelace/lights` on `line 74`. 
