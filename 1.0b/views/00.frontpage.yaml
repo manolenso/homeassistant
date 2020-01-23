@@ -41,7 +41,7 @@
                         battery_entity: {{ _global.frontpage[13] }}
                         navigation_path: /lovelace/person_2
                         padding_phone: 7px 1px
-                  # Person 3 (Middle Photo) if you don't need this, remove line 48 up to and including line 53!
+                  # Person 3 (Middle Photo) if you don't need this, remove line 44 up to and including line 49!
                 - !include
                   - '../templates/wide_picture_elements_template.yaml'
                   - entity: {{ _global.frontpage[14] }}
