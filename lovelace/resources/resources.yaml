@@ -16,6 +16,10 @@
   - url: /community_plugin/rgb-light-card/card.js
     type: js
 
+# Light Entity Card
+  - url: /community_plugin/light-entity-card/light-entity-card.js
+    type: js
+
 # Card Tools
   - url: /community_plugin/lovelace-card-tools/card-tools.js
     type: module
@@ -24,8 +28,16 @@
   - url: /community_plugin/check-button-card/check-button-card.js
     type: module
 
+# Mini Media Player Card
+  - url: /community_plugin/mini-media-player/mini-media-player-bundle.js
+    type: module
+
 # Upcoming Media Card (Plex, Sonarr and/or Radarr required)
   - url: /community_plugin/upcoming-media-card/upcoming-media-card.js
+    type: js
+
+# Calendar Card (Requires calendar sensors)
+  - url: /community_plugin/calendar-card/calendar-card.js
     type: js
 
 # Button Card
