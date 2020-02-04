@@ -1,0 +1,77 @@
+  - name: VTC Best
+    latitude: 51.489327
+    longitude: 5.393853
+    radius: 100
+    icon: mdi:office-building
+
+  - name: AH Eindhoven
+    latitude: 51.459777
+    longitude: 5.48870
+    radius: 100
+    icon: mdi:office-building
+
+  - name: Ouders Jim
+    latitude: 51.506066
+    longitude: 5.488753
+    radius: 50
+    icon: mdi:nature-people
+
+  - name: Ouders Steph
+    latitude: 51.464867
+    longitude: 5.491196
+    radius: 50
+    icon: mdi:nature-people
+  
+  - name: Plasje Best
+    latitude: 51.502353
+    longitude: 5.433985
+    radius: 150
+    icon: mdi:tree
+
+  - name: Ad en Lisanne
+    latitude: 51.482810
+    longitude: 5.437145
+    radius: 50
+    icon: mdi:account-multiple
+
+  - name: Leo en Latoya
+    latitude: 51.427566
+    longitude: 5.564804
+    radius: 50
+    icon: mdi:account-multiple
+
+  - name: Oma van Grootel
+    latitude: 51.464289
+    longitude: 5.487576
+    radius: 50
+    icon: mdi:nature-people
+
+  - name: Oma Schings
+    latitude: 50.964376
+    longitude: 5.826050
+    radius: 50
+    icon: mdi:nature-people
+
+  - name: Roxanne Fashion
+    latitude: 51.464495
+    longitude: 5.489073
+    radius: 25
+    icon: mdi:account-multiple
+
+  - name: Losloop Bosje
+    latitude: 51.516873
+    longitude: 5.475944
+    radius: 400
+    icon: mdi:tree
+
+  - name: Joe Mann
+    latitude: 51.509783
+    longitude: 5.434078
+    radius: 750
+    icon: mdi:tree
+
+  - name: Les Pins
+    latitude: 44.789423
+    longitude: 1.472006
+    radius: 2500
+    icon: mdi:tree

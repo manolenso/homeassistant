@@ -1,0 +1,6 @@
+remote_control:
+  name: Remote Control Selector
+  options:
+    - Woonkamer
+    - Slaapkamer
+  initial: Woonkamer
