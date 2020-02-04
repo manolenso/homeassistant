@@ -11,3 +11,117 @@
           - name: {{ _global.energy_header.subtitle|default('Energy consumption monitor') }}
             icon: {{ _global.energy_header.icon|default('mdi:chart-line') }}
             content: {{ _global.energy_header.title|default('Energy') }}
+        - !include
+          - '../templates/header_text.yaml'
+          - content: '##### Current'
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              min_columns: 3
+              max_columns: 3
+              justify_content: start
+              layout: horizontal
+              cards:
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.wasmachine_current
+                    name: Wasmachine
+                    line_color: '"#ffb414"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.droger_current
+                    name: Droger
+                    line_color: '"#ffb414"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.vaatwasser_current
+                    name: Vaatwasser
+                    line_color: '"#ffb414"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+        - !include
+          - '../templates/header_text.yaml'
+          - content: '##### Power'
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              min_columns: 3
+              max_columns: 3
+              justify_content: start
+              layout: horizontal
+              cards:
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.wasmachine_power
+                    name: Wasmachine
+                    line_color: '"#1427ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.droger_power
+                    name: Droger
+                    line_color: '"#1427ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.vaatwasser_power
+                    name: Vaatwasser
+                    line_color: '"#1427ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+        - !include
+          - '../templates/header_text.yaml'
+          - content: '##### Voltage'
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              min_columns: 3
+              max_columns: 3
+              justify_content: start
+              layout: horizontal
+              cards:
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.wasmachine_voltage
+                    name: Wasmachine
+                    line_color: '"#00d8ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.droger_voltage
+                    name: Droger
+                    line_color: '"#00d8ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65
+                - !include
+                  - '../templates/mini_graph.yaml'
+                  - entity: sensor.vaatwasser_voltage
+                    name: Vaatwasser
+                    line_color: '"#00d8ff"'
+                    graph_type: bar
+                    show_extrema: true
+                    decimals: 0
+                    font_size: 65 

@@ -11,3 +11,51 @@
           - name: {{ _global.automations_header.subtitle|default('Turn automations on or off') }}
             icon: {{ _global.automations_header.icon|default('mdi:alpha-a-box') }}
             content: {{ _global.automations_header.title|default('Automations') }}
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              min_columns: 3
+              max_columns: 3
+              justify_content: start
+              layout: horizontal
+              cards:
+                - !include
+                  - '../templates/button.yaml'
+                  - entity: group.film_kijken_automation
+                    name: Dim Light
+                    icon: fal:film-alt
+                    label: Movie
+                    grid:
+                      '!include ../includes/automations-grid.yaml'
+                - !include
+                  - '../templates/button.yaml'
+                  - entity: group.deur_notifications
+                    name: Door
+                    icon: fal:door-closed
+                    label: Notifications
+                    grid:
+                      '!include ../includes/automations-grid.yaml' 
+                - !include
+                  - '../templates/button.yaml'
+                  - entity: group.vaatwasser_starten
+                    name: Dishwasher On
+                    icon: mdi:dishwasher
+                    label: After Laundry
+                    grid:
+                      '!include ../includes/automations-grid.yaml' 
+                - !include
+                  - '../templates/button.yaml'
+                  - entity: automation.motion_detected_no_one_home_gallerij
+                    name: Movement
+                    icon: fal:sensor-on
+                    label: Notification
+                    grid:
+                      '!include ../includes/automations-grid.yaml' 
+                - !include
+                  - '../templates/button.yaml'
+                  - entity: group.all_automations
+                    name: Automations
+                    icon: mdi:alpha-a-box
+                    label: All
+                    grid:
+                      '!include ../includes/automations-grid.yaml' 

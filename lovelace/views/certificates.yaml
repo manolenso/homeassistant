@@ -11,3 +11,37 @@
           - name: {{ _global.certificates_header.subtitle|default('Expiration overview') }}
             icon: {{ _global.certificates_header.icon|default('mdi:file-certificate') }}
             content: {{ _global.certificates_header.title|default('Certificates') }}
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              cards:
+                - type: entities
+                  {% raw %}
+                  style: |
+                    ha-card {
+                      border-radius: {{ states('input_select.border_radius') }};
+                      box-shadow: {{ states('input_select.box_shadow') }};
+                      font-family: Helvetica;
+                      font-size: 12px;
+                      opacity: 0.8;
+                    }
+                  {% endraw %}
+                  entities:
+                    - entity: sensor.certificate_remote
+                      name: Remote
+                      icon: fal:file-certificate
+                    - entity: sensor.certificate_hassio
+                      name: Hassio
+                      icon: fal:file-certificate
+                    - entity: sensor.certificate_bitwarden
+                      name: Vault
+                      icon: fal:file-certificate
+                    - entity: sensor.certificate_plex
+                      name: Plex
+                      icon: fal:file-certificate
+                    - entity: sensor.certificate_media
+                      name: Media
+                      icon: fal:file-certificate
+                    - entity: sensor.certificate_valetudo  
+                      name: Valetudo
+                      icon: fal:file-certificate

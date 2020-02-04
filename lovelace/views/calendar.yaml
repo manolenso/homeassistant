@@ -11,3 +11,40 @@
           - name: {{ _global.calendar_header.subtitle|default('Not Available') }}
             icon: {{ _global.calendar_header.icon|default('mdi:calendar') }}
             content: {{ _global.calendar_header.title|default('Calendar') }}
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              cards:
+                - type: entities
+                  {% raw %}
+                  style: |
+                    ha-card {
+                      border-radius: {{ states('input_select.border_radius') }};
+                      box-shadow: {{ states('input_select.box_shadow') }};
+                    }
+                  {% endraw %}
+                  entities:
+                    - entity: sensor.anniversary_trouwdag
+                      icon: mdi:ring
+                      name: Trouwdag
+                    - entity: sensor.birthday_stephanie_schings
+                      icon: mdi:gift
+                      name: Stephanie
+                    - entity: sensor.birthday_jimmy_schings
+                      name: Jimmy
+                      icon: mdi:gift
+                    - entity: sensor.birthday_tala
+                      name: Tala
+                      icon: mdi:dog-side
+                   # - entity: sensor.birthday_helen_van_duuren
+                   #   name: Helen
+                   #   icon: mdi:human-female
+                    - entity: sensor.birthday_koos_van_duuren
+                      name: Koos
+                      icon: mdi:human-male
+                   # - entity: sensor.birthday_roxanne_van_duuren
+                   #   name: Roxanne
+                   #   icon: mdi:human-female
+                    - entity: sensor.birthday_jos_schings
+                      name: Jos
+                      icon: mdi:human-male

@@ -8,3 +8,12 @@
           - name: Environment
             icon: mdi:wrench
             content: Test
+        - type: custom:layout-card
+          cards:
+            - type: custom:layout-card
+              cards:
+                - type: custom:gui-sandbox
+                - type: entities
+                  entities:
+                    - type: custom:thermostat-popup-card
+                      entity: climate.kleine_kamer
