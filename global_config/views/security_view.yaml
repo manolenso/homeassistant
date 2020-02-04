@@ -8,30 +8,29 @@
 # set up by myself. It tries to show as much of the interface as possible without the need for you to edit the views. You will ofcourse
 # want to set it up yourself. Using it this way makes it possible to only change what you want to change. E.g. You only want to change
 # the icons on the buttons of the frontpage? Well you will only need to uncomment the item in the list below and put in your own config!
-# DO NOT EVER COMMENT THE CURRENTLY UNCOMMENTED LINES, DO NOT REMOVE THEM EITHER!
 
 # Before you continue I will recommend you to use VSCode as a text editor https://code.visualstudio.com/
 
 # Header
 security_header:
-#  title: Security
-#  icon: fal:sensor-alert
+  title: Security
+  icon: fal:sensor-alert
 
 # Camera Sorting (you can choose either between: domain, entity_id, name, state, last_changed, last_updated or last_triggered.)
 security_camera_sorting:
-#  method: name
+  method: name
 
 # Binary Sensors Sorting (you can choose either between: domain, entity_id, name, state, last_changed, last_updated or last_triggered.)
 security_binary_sensor_sorting:
-#  method: name
+  method: name
 
 # Security Categories
 security:
-#  camera_category_name: Camera`s
-#  door_category_name: Doors
-#  window_category_name: Windows
-#  motion_category_name: Motion
-#  other_category_name: Other
+  camera_category_name: Camera`s
+  door_category_name: Doors
+  window_category_name: Windows
+  motion_category_name: Motion
+  other_category_name: Other
 
 # Config
 # The security config is done through a template and groups. To make the security view work, make sure that you have filled the hki_groups.yaml
