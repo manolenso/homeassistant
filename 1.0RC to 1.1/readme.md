@@ -14,7 +14,7 @@ The last few bugs are leaving HKI now and the RC tag is gone, thanks again for t
 
 #### How to update?
 You can ONLY update to this version if you come from the 1.0RC version (you will NOT be able to update from alpha/beta directly to this version)
-Copy/Paste all the files from the update folder to the root of your setup.
+Copy/Paste all the files from the [update](https://github.com/jimz011/homeassistant/tree/updates/1.0RC%20to%201.1) folder to the root of your setup.
 Copy your `/homekit_infused/hki_groups.yaml` file to `/packages/homekit_infused/`, it will ask you to overwrite the old file, click yes.
 In your `configuration.yaml` file edit the following lines and change it to:
 ```
