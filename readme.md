@@ -9,8 +9,8 @@ My current Home Assistant version is 0.105.0b7
 ### [Click here](https://jimz011.github.io/homeassistant/) for documentation
 ### [Click here](https://github.com/jimz011/homeassistant/tree/updates) for updates
 ### [Click here](https://github.com/jimz011/homeassistant/releases) for older releases
-### [Click here](https://github.com/jimz011/homeassistant/tree/personal) for my personal setup (Can be handy for the many useful examples)
-### [Click here](https://community.home-assistant.io/t/homekit-infused-hki-v0-13-3/117086/1) for my HA Commmunity Forum Thread
+### [Click here](https://github.com/jimz011/homeassistant/tree/personal) for my personal setup (Great Examples)
+### [Click here](https://community.home-assistant.io/t/homekit-infused-hki-v0-13-3/117086/1) for my HA Community Forum Thread
 
 #### About
 Hello HA friends, my name is Jimz011 and I proudly present to you HKI v.1.1
