@@ -8,7 +8,7 @@
       cards:
         - !include
           - '../templates/system_header.yaml'
-          - name: "[[[ if (states['sensor.current_lights_on'].state == 0) return `Alle lampen zijn uitgeschakeld`; if (states['sensor.current_lights_on'].state == 1) return `Er is 1 lamp ingeschakeld`; else return `Er zijn ${states['sensor.current_lights_on'].state} lampen ingeschakeld` ]]]"
+          - name: "[[[ return `${states['sensor.current_lights_on'].state} Lights are turned on` ]]]"
             icon: {{ _global.lights_header.icon|default('mdi:floor-lamp') }}
             content: {{ _global.lights_header.title|default('Lights') }}
         - !include
