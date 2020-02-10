@@ -118,3 +118,18 @@ state:
         - color: var(--primary-text-color)
       lock:
         - color: var(--paper-item-icon-color)
+  - value: "scening"
+    spin: {{ spin_off|default('false') }}
+    styles:
+      card:
+        - opacity: {{ opacity_off|default('0.8') }}
+      icon:
+        - color: {{ icon_color_off|default('var(--paper-item-icon-color)') }}
+      name:
+        - color: var(--primary-text-color)
+      state:
+        - color: var(--primary-text-color)
+      label:
+        - color: var(--primary-text-color)
+      lock:
+        - color: var(--paper-item-icon-color)
