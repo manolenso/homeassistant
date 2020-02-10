@@ -11,5 +11,36 @@
           - name: "Presets"
             icon: {{ _global.scenes_header.icon|default('mdi:arrange-send-backward') }}
             content: {{ _global.scenes_header.title|default('Scenes') }}
-
+        - type: custom:layout-card
+          cards:
+            - type: custom:auto-entities
+              filter:
+                include:
+                  - domain: scene
+                    options:
+                      !include
+                      - '../templates/button.yaml'
+                      - entity: this.entity_id
+                        grid:
+                          '!include ../includes/light-devices-grid.yaml'
+                        template: switch_popup.yaml
+                        lock: {{ lock|default('false') }}
+                        color: DodgerBlue
+                        spin_on: true
+                        show_state: false
+                  - type: custom:button-card
+                    color_type: blank-card
+                    aspect_ratio: 1/1
+                  - type: custom:button-card
+                    color_type: blank-card
+                    aspect_ratio: 1/1
+              sort:
+                method: name
+                numeric: true
+              card:
+                type: custom:layout-card
+                min_columns: 3
+                max_columns: 3
+                justify_content: start
+                layout: horizontal
 
