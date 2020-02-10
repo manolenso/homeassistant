@@ -62,6 +62,7 @@ If all went well you should now have a working Homekit Infused setup with at lea
 - cleaning
 - waze traffic info
 - battery
+- scenes (you must add scenes to customize.yaml if you want icons, remember to choose short names)
 - vacuum (if you have a vacuum setup, preferably even rooted when possible)
 - remote (depending on the downloaded template from the addons folder, coming soon!)
 - laundry (depending if your devices know state and power usage)
@@ -79,7 +80,6 @@ Views that need to be either edited by yourself or downloaded as an addon in fut
 - downloads
 - energy consumption
 - computers
-- scenes
 - calendar
 - certificates
 - floorplan
