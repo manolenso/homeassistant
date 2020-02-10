@@ -3,7 +3,6 @@
 ## Contents
 - [About](index.md)
 - [Intro](intro.md)
-- [Important Notes](notes.md)
 - [Preparation](preparation.md)
 - [Installation](installation.md)
 - [Configuration](configuration.md)
@@ -23,6 +22,7 @@ and motivate your answer. Tell me why you think I should add it and what benefit
   - Flight Information (currently there are no known components/addons that can do this, I will add this if this ever comes)
   - News (seems a bit too heavy for Home Assistant to have this running all the time, but I will look into it)
   - The power usage label in the buttons which was present pre HKI 1.0 will make its return if I find a way to get it to work with auto-entities. This will come soon!
+  - The orange theme from HKI 0.12.x
   
 ### To Do
   - Tweak some themes here and there
