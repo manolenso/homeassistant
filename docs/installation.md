@@ -47,13 +47,13 @@ You won't need to add them to the resources file as I have already done this for
 | [Upcoming Media Card](https://github.com/custom-cards/upcoming-media-card) | js | No | This card can be used with the upcoming media component and is useful only for Plex, Radarr and Sonarr |
 | [Xiaomi Vacuum Map Card](https://github.com/PiotrMachowski/lovelace-xiaomi-vacuum-map-card) | Module | No | This is the map card used for vacuum cleaners |
 | [GUI Sandbox Card](https://github.com/thomasloven/lovelace-gui-sandbox) | Module | No | A very cool card to make the UI editor partly available in YAML mode, this card gives you the original card editor with the exception that you can't save the cards directly. You can however copy/paste the code created with this |
+| [Light Popup Card](https://github.com/DBuit/light-popup-card) | Module | Yes | These are the popup cards used for lights and switches|
 
 Manual Plugins Installation. The following plugins can either not be found on the HACS store or are modified by me. The best way to install these are to copy the corresponding files into your `/www/community/` folder. Do NOT get them from HACS!!
 
 | Name | Type | Required | Description |
 |----------------------------------|--------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Light Popup Card](https://github.com/DBuit/light-popup-card) | Module | Yes | These are popup cards used for lights, copy the `/www/community/light-popup/` folder and paste it into the directory mentioned above |
-| [Thermostat Popup Card](https://github.com/DBuit/thermostat-popup-card) | Module | Yes | These are popup cards used for climate devices, copy the `/www/community/light-popup/` folder and paste it into the directory mentioned above |
+| [Thermostat Popup Card](https://github.com/DBuit/thermostat-popup-card) | Module | Yes | These are popup cards used for climate devices, copy the `/www/community/thermostat-popup/` folder and paste it into the directory mentioned above |
 | [Deep Press Mod](https://github.com/roflcoopter/deep-press) | Module | No | This is only useful for households with iPhones that have 3d-touch. It might not work well on mixed households (e.g. Android and iOS or iPhones without 3d-touch. | 
 
 #### Components (click on Integrations in HACS)
@@ -62,7 +62,6 @@ Manual Plugins Installation. The following plugins can either not be found on th
 |----------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Browser Mod](https://github.com/thomasloven/hass-browser_mod) | Yes | Browser-mod makes the browser more useful and gives us the opportunity to show/create custom popups and many more, make sure you have `browser_mod:` in your `configuration.yaml` after you have installed it. Click the link for instructions! |
 | [Lovelace Gen](https://github.com/thomasloven/hass-lovelace_gen) | Yes | This is the MOST important piece of the setup, without this HKI will not work! Don't add this to your `configuration.yaml` file as the included package already does so for you, if you already have `lovelace_gen:` in your `configuration.yaml` please remove or comment that line! |
-| [Average Sensor](https://github.com/Limych/ha-average) | No | This sums up the number of any of your entities and creates an average sensor of it, I use this on the climate view and frontpage. Not required, but you must have some kind of replacement if you don't use this | 
 | [Average Sensor](https://github.com/Limych/ha-average) | No | This sums up the number of any of your entities and creates an average sensor of it, I use this on the climate view and frontpage. Not required, but you must have some kind of replacement if you don't use this, I recommend you to install it though, do not forget to set it up after installing |
 | [Plex Recently Added](https://github.com/custom-components/sensor.plex_recently_added) | No | This works in conjunction with the Upcoming Media plugin, this is only useful if you use Plex |
 | [Sonarr and Radarr Upcoming Media](https://github.com/custom-components/sensor.radarr_upcoming_media) | No | This works in conjunction with the Upcoming Media plugin, this is only useful if you use Sonarr or Radarr |
@@ -93,6 +92,8 @@ To copy the files you will need all the following files/folders from my repo.
 homeassistant:
     packages: !include_dir_named packages/
 ```
+Note: If you have an existing setup and already have packages, you must cut/paste the packages folder inside your currently exising packages folder! (depending on the way the folder is included within your configuration.yaml file)
+
 - This will already work if you have used HACS for themes in the past, but to be safe add the following line to your `configuration.yaml` file:
 ```
 frontend:
@@ -105,11 +106,11 @@ lovelace:
     mode: yaml
 ```
 
-- Now choose your layout. You have the choice between the following frontpage layouts:
-1. Default (two large photos and a smaller photo in the middle)
-2. 2-persons (two large photos, no middle photo)
-3. 4-persons (four large photos)
-4. 4-persons (two large photos, two smaller photos)
+- Now choose your layout. You have the choice between the following frontpage layouts: (screenshots soon!)
+1. Default (two large photos with device tracker and sensors, and a smaller photo in the middle with device tracker only)
+2. 2-persons (two large photos with device tracker and sensors)
+3. 4-persons (four large photos with device tracker and sensors)
+4. 4-persons (two large photos with device tracker and sensors, two photos with device tracker only)
 - If you have chosen your layout, please do the following: Copy the chosen template from the `/addons/views/` folder (found on the repo) to your `/lovelace/views/` folder. You MUST remove the `00.frontpage.yaml` file which comes by default! If you just wish to use the default you can skip this step!
 
 Note: you can't have duplicate keys, this means that you can't have either the exact same config twice. This is mostly important for users coming from the alpha or beta versions of this setup. If you did run the beta and want to update, you MUST remove EVERYTHING that was related to the alpha/beta (this means, views, global_config, automations, input_selects, etc, etc). Don't forget anything. (if you can't remember what those files were, you can simply download the beta release from the repo and see which files were in there). HKI config is now packaged for easy updates. This also means that keeping the old automations etc would mean duplicate keys!
