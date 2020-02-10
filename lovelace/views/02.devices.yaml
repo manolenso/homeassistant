@@ -8,7 +8,7 @@
       cards:
         - !include
           - '../templates/system_header.yaml'
-          - name: "[[[ return `${states['sensor.current_devices_on'].state} devices are turned on` ]]]"
+          - name: "[[[ return `${states['sensor.current_devices_on'].state} Devices are turned on` ]]]"
             icon: {{ _global.devices_header.icon|default('mdi:power-plug') }}
             content: {{ _global.devices_header.title|default('Devices') }}
         - !include
