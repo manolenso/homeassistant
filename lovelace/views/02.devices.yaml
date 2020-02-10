@@ -8,7 +8,7 @@
       cards:
         - !include
           - '../templates/system_header.yaml'
-          - name: "[[[ if (states['sensor.current_devices_on'].state == 0) return `Alle apparaten zijn uitgeschakeld`; if (states['sensor.current_devices_on'].state == 1) return `Er is 1 apparaat ingeschakeld`; else return `Er zijn ${states['sensor.current_devices_on'].state} apparaten ingeschakeld` ]]]"
+          - name: "[[[ return `${states['sensor.current_devices_on'].state} devices are turned on` ]]]"
             icon: {{ _global.devices_header.icon|default('mdi:power-plug') }}
             content: {{ _global.devices_header.title|default('Devices') }}
         - !include
