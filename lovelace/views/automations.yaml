@@ -11,3 +11,25 @@
           - name: {{ _global.automations_header.subtitle|default('Turn automations on or off') }}
             icon: {{ _global.automations_header.icon|default('mdi:alpha-a-box') }}
             content: {{ _global.automations_header.title|default('Automations') }}
+        - type: custom:layout-card
+          cards:
+            - type: custom:auto-entities
+              filter:
+                include:
+                  - domain: automation
+              sort:
+                method: name
+                numeric: true
+              card:
+                type: entities
+                {% raw %}
+                style: |
+                  ha-card {
+                    border-radius: {{ states('input_select.border_radius') }};
+                    box-shadow: {{ states('input_select.box_shadow') }};
+                  }
+                {% endraw %}
+                min_columns: 3
+                max_columns: 3
+                justify_content: start
+                layout: horizontal
