@@ -3,7 +3,6 @@
 ## Contents
 - [About](index.md)
 - [Intro](intro.md)
-- [Important Notes](notes.md)
 - [Preparation](preparation.md)
 - [Installation](installation.md)
 - [Configuration](configuration.md)
