@@ -67,7 +67,7 @@ If all went well you should now have a working Homekit Infused setup with at lea
 - remote (depending on the downloaded template from the addons folder, coming soon!)
 - laundry (depending if your devices know state and power usage)
 - upcoming media (depending if you have plex/radarr and sonarr setup)
-- about (which shows version number)
+- about (shows version number and project info, update this with each update)
 
 Popups should work out of the box for the following views
 - light
