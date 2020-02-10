@@ -48,17 +48,25 @@ This step can be skipped for now if you want to.
 Notifications is something I can't template for you, this would require me to know exactly how many devices you have and what their entity names are. The file included is merely an example of how I have it set up and how you could set it up yourself. The first card in the list must have all the entities that come beneath it included in the list of states. This message will tell you that you have no notifications. This will only work if you have all the entities you define below that card inside of that list! Study my example carefully and you will be able to reproduce this pretty easy. All you would need to change are the entities and messages, you don't need to touch anything else.
 
 #### What should work now?
-If all went well you should now have a working Homekit Infused setup with at least the following views that are working:
+If all went well you should now have a working Homekit Infused setup with at least the following views that are working and auto-filled:
 - climate
 - lights
 - devices
 - security
 - frontpage
 - menu
-- vacuum (if you have a vacuum setup, preferably even rooted when possible)
 - weather
 - themes
+- automations
+- location
+- cleaning
+- waze traffic info
 - battery
+- vacuum (if you have a vacuum setup, preferably even rooted when possible)
+- remote (depending on the downloaded template from the addons folder, coming soon!)
+- laundry (depending if your devices know state and power usage)
+- upcoming media (depending if you have plex/radarr and sonarr setup)
+- about (which shows version number)
 
 Popups should work out of the box for the following views
 - light
@@ -66,6 +74,15 @@ Popups should work out of the box for the following views
 - security
 - climate
 - thermostat
+
+Views that need to be either edited by yourself or downloaded as an addon in future releases:
+- downloads
+- energy consumption
+- computers
+- scenes
+- calendar
+- certificates
+- floorplan
 
 To get popups everywhere you will need to setup the legacy_popup.yaml just replace any of my example entities into your own. ONLY put entities in here that do not have the possibility to do a service-call. Entities like `person.your_name` for instance. This is NOT a requirement for the setup to work, the only reason this is used is so that some popups (which uses the original design popup/more-info windows) will have the same style as the rest of HKI, these entities are usually not that numerous within HKI so don't put ALL your entities in here. Entities like lights, sensors, binary_sensors, switches, climate and camera's will all be handled automatically within HKI!
 
