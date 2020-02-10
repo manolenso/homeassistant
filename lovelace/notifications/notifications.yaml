@@ -58,7 +58,7 @@
     !include
     - '../templates/notification_template.yaml'
     - icon: mdi:check-box-outline
-      name: Alles is rustig, er zijn geen meldingen
+      name: All clear, No notifications
 # Smoke Detector Triggered
 - type: conditional
   conditions:
@@ -67,8 +67,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-smoke
-      name: Er is rook gesignaleerd in de keuken!!
+    - icon: mdi:smoke-detector
+      name: Smoke detected in the kitchen!!
       spin: true
 # Alarm Triggered
 - type: conditional
@@ -78,8 +78,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-alert
-      name: LET OP! Het alarm is afgegaan, LET OP!
+    - icon: mdi:alert
+      name: The alarm is triggered!!
 # Alarm Armed
 - type: conditional
   conditions:
@@ -90,8 +90,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-alert
-      name: LET OP! Het alarm is ingeschakeld!
+    - icon: mdi:alert
+      name: Warning! The Alarm is armed
 # Alarm Disarmed Not Home
 - type: conditional
   conditions:
@@ -102,8 +102,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:exclamation-circle
-      name: Er is niemand meer thuis, schakel het alarm in!
+    - icon: mdi:exclamation
+      name: No one is home, please arm the Alarm!
 # Wedding Day (number of years married)
 - type: conditional
   conditions:
@@ -114,8 +114,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:rings-wedding
-      name: "[[[ return `Vandaag zijn we ${states['sensor.anniversary_trouwdag'].attributes.years} jaar getrouwd!` ]]]"
+    - icon: mdi:ring
+      name: "[[[ return `Congratulations, we are married for ${states['sensor.anniversary_trouwdag'].attributes.years} years!` ]]]"
       spin: true
 # Anniversary (number of years since we are together)
 - type: conditional
@@ -127,8 +127,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:rings-wedding
-      name: "[[[ return `Vandaag zijn we ${states['sensor.anniversary_anniversary'].attributes.years} jaar samen!` ]]]"
+    - icon: mdi:ring
+      name: "[[[ return `Congratulations, we are together for ${states['sensor.anniversary_anniversary'].attributes.years} years!` ]]]"
       spin: true
 # Afzuigkap
 - type: conditional
@@ -140,8 +140,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fas:fan
-      name: De afzuigkap staat aan!
+    - icon: mdi:fan
+      name: The kitchen hood is on
       spin: true
 # Voordeur
 - type: conditional
@@ -151,8 +151,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:door-open
-      name: De voordeur staat open!
+    - icon: mdi:door-open
+      name: The frontdoor is open!
 # Woonkamer Deur
 - type: conditional
   conditions:
@@ -161,8 +161,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:door-open
-      name: De woonkamerdeur staat open!
+    - icon: mdi:door-open
+      name: The livingroom door is open!
 # Slaapkamer Deur
 - type: conditional
   conditions:
@@ -171,8 +171,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:door-open
-      name: De slaapkamerdeur staat open!
+    - icon: mdi:door-open
+      name: The bedroom door is open!
 # Droger
 - type: conditional
   conditions:
@@ -183,8 +183,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:dryer-alt
-      name: De droger is klaar!
+    - icon: mdi:tumble-dryer
+      name: The tumble dryer is ready!
 # Wasmachine
 - type: conditional
   conditions:
@@ -195,8 +195,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:washer
-      name: De wasmachine is klaar!
+    - icon: mdi:washing-machine
+      name: The washing machine is ready!
 # Vaatwasser
 - type: conditional
   conditions:
@@ -208,7 +208,7 @@
     !include
     - '../templates/notification_template.yaml'
     - icon: mdi:dishwasher
-      name: De vaatwasser is klaar!
+      name: The dishwasher is ready!
 # Hond
 - type: conditional
   conditions:
@@ -217,8 +217,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:dog
-      name: Tala is niet thuis!
+    - icon: mdi:dog-side
+      name: The dog is not home!
 # Motion Gallerij
 - type: conditional
   conditions:
@@ -227,8 +227,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging op de gallerij
+    - icon: mdi:motion-sensor
+      name: Movement detected on the gallery!
 # Motion Woonkamer
 - type: conditional
   conditions:
@@ -237,8 +237,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging in de woonkamer
+    - icon: mdi:motion-sensor
+      name: Movement detected in the livingroom!
 # Motion Bijkeuken
 - type: conditional
   conditions:
@@ -247,8 +247,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging in de bijkeuken
+    - icon: mdi:motion-sensor
+      name: Movement detected in the laundry room!
 # Motion Toilet
 - type: conditional
   conditions:
@@ -257,8 +257,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging op het toilet
+    - icon: mdi:motion-sensor
+      name: Movement detected on the toilet!
 # Motion Gang
 - type: conditional
   conditions:
@@ -267,8 +267,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging in de gang
+    - icon: mdi:motion-sensor
+      name: Movement detected in the hallway!
 # Motion Office
 - type: conditional
   conditions:
@@ -277,8 +277,8 @@
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:sensor-on
-      name: Er is beweging in de kleine kamer
+    - icon: mdi:motion-sensor
+      name: Movement detected in the office!
 # Vacuum Notification (Cleaning)
 - type: conditional
   conditions:
@@ -296,117 +296,11 @@
 - type: conditional
   conditions:
     - entity: vacuum.xiaomi_vacuum_cleaner
-      state: idle
+      state_not: docked
     - entity: alarm_control_panel.home_alarm
       state: disarmed
   card:
     !include
     - '../templates/notification_template.yaml'
-    - icon: fal:vacuum-robot
-      name: Johnny staat stil
-# Vacuum Notification (Paused)
-- type: conditional
-  conditions:
-    - entity: vacuum.xiaomi_vacuum_cleaner
-      state: paused
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - icon: fal:vacuum-robot
-      name: Johnny is gepauzeerd
-# Vacuum Notification (Returning)
-- type: conditional
-  conditions:
-    - entity: vacuum.xiaomi_vacuum_cleaner
-      state: returning
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - icon: fal:vacuum-robot
-      name: Johnny keert terug naar de dock
-      spin: true
-# Vacuum Notification (Error Sensor)
-- type: conditional
-  conditions:
-    - entity: sensor.vacuum_cleaner_error_sensor
-      state_not: 'No Error'
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - icon: fal:vacuum-robot
-      name: Johnny is vastgelopen
-# APK Stephanie
-- type: conditional
-  conditions:
-    - entity: input_boolean.apksteph
-      state: "on"
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed      
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - icon: fal:steering-wheel
-      name: "[[[ return `APK Citroën C1 verloopt op ${states['sensor.citroen_c1_expdate'].state}` ]]]"
-      spin: true
-# APK Jimmy
-- type: conditional
-  conditions:
-    - entity: input_boolean.apkjimz
-      state: "on"
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed      
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - icon: fal:steering-wheel
-      name: "[[[ return `APK Peugeot 207 SW verloopt op ${states['sensor.peugeot_207_expdate'].state}` ]]]"
-      spin: true
-      
-## Birthdays
-
-# Jimmy Schings
-- type: conditional
-  conditions:
-    - entity: sensor.birthday_jimmy_schings
-      state: '0'
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed      
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - entity: input_boolean.notification_birthday
-      icon: fal:gift
-      name: "[[[ return `Jimmy Schings is vandaag ${states['sensor.birthday_jimmy_schings'].attributes.years} geworden!` ]]]"
-# Stephanie Schings
-- type: conditional
-  conditions:
-    - entity: sensor.birthday_stephanie_schings
-      state: '0'
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed      
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - entity: input_boolean.notification_birthday
-      icon: fal:gift
-      name: "[[[ return `Stephanie Schings is vandaag ${states['sensor.birthday_stephanie_schings'].attributes.years} geworden!` ]]]"
-
-# Tala
-- type: conditional
-  conditions:
-    - entity: sensor.birthday_tala
-      state: '0'
-    - entity: alarm_control_panel.home_alarm
-      state: disarmed      
-  card:
-    !include
-    - '../templates/notification_template.yaml'
-    - entity: input_boolean.notification_tala
-      icon: mdi:dog-side
-      name: "[[[ return `Tala is vandaag ${states['sensor.birthday_jimmy_schings'].attributes.years} geworden!` ]]]"
+    - icon: mdi:robot-vacuum
+      name: "[[[ return `The vacuum cleaner is ${states['vacuum.xiaomi_vacuum_cleaner'].state}` ]]]"
