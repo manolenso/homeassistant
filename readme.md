@@ -3,7 +3,7 @@ If you find any information on this page useful, feel free to buy me a coffee:
 <a href="https://paypal.me/JimmySchings" target="_blank"><img src="https://github.com/jimz011/homeassistant/blob/master/www/images/paypal-donate-button.png" ></a>
 <a href="https://www.buymeacoffee.com/w8Jnf6Hit" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 # Homekit Infused (Lovelace) by Jimz011 Februari 2020 v1.1 (*updated: 05/02/2020)
-My current Home Assistant version is 0.105.1
+My current Home Assistant version is 0.105.3
 
 # [Click here](https://www.youtube.com/channel/UCYfcLj3IuQ-1mrnqgCk8f0w) for my YouTube channel
 ### [Click here](https://jimz011.github.io/homeassistant/) for documentation
