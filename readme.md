@@ -1,4 +1,2 @@
-# This is my personal setup, I advise you to copy stuff from this with care. 
-ONLY and ONLY use this as reference for your own projects. Do not blatantly copy this into HKI as it will/might not work!
-
+# This is my personal setup, I advise you to only use stuff you think you might need. DON'T USE THIS TO INSTALL HKI, THIS IS MOST LIKELY OUTDATED!
 Please go to the master branch if you are looking for the actual HKI for all of you!
